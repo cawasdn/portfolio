@@ -21,7 +21,10 @@ const Contact = () => {
           className='openModalBtn flex items-center space-x-1 hover:bg-slate-200 px-2 py-1 transition-all duration-200 rounded cursor-pointer'
           onClick={() => {
             setOpenModal(true)
-            document.body.style.overflow = 'hidden'
+            const overflow = document
+              .querySelector('body')
+              .classList.toggle('overflow-inactive')
+            // document.body.style.overflow = 'hidden'
             // document.body.style.filter = 'blur(20px)'
           }}
         >

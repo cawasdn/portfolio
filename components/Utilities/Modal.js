@@ -1,12 +1,25 @@
 import { MdClose } from 'react-icons/md'
 import { SiMinutemailer } from 'react-icons/si'
+import { useEffect } from 'react'
+
+import useSound from 'use-sound'
 
 // md:h-[580px] md:w-[500px]
 // h-full w-full
 
 const modal = ({ closeModal }) => {
+  // Menu Click Sound
+  const [playClick] = useSound('/sounds/Click.mp3')
+  const handleContactClickSound = () => {
+    playClick()
+  }
+  // ************
+  useEffect(() => {
+    handleContactClickSound()
+  })
+
   return (
-    <div className='modalBackground fixed left-0 right-0 h-screen bottom-0 z-50 bg-slate-300/80 flex justify-center items-center'>
+    <div className='modalBackground fixed left-0 right-0 h-screen bottom-0 z-50 bg-black/60 flex justify-center items-center'>
       <div
         className='modalContainer bg-white p-0 relative rounded-lg shadow-lg top-[50px] md:top-0'
         data-aos='zoom-in'
@@ -16,8 +29,11 @@ const modal = ({ closeModal }) => {
         <div>
           <button
             onClick={() => {
-              document.body.style.overflow = 'visible'
+              // document.body.style.overflow = 'visible'
               closeModal(false)
+              document
+                .querySelector('body')
+                .classList.remove('overflow-inactive')
             }}
             className='absolute right-4 top-4 font-bold hover:bg-slate-200 hover:rounded-full p-1'
           >

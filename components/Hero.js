@@ -40,7 +40,7 @@ const Hero = () => {
             <Tippy content='Github Profile'>
               <a href='https://github.com/cawasdn' target='_blank'>
                 <AiFillGithub
-                  size='40px'
+                  size={42}
                   className='hover:bg-slate-200 rounded p-1'
                 />
               </a>
@@ -48,7 +48,7 @@ const Hero = () => {
             <Tippy content='Linkedin Profile'>
               <a href='' target='_blank'>
                 <AiFillLinkedin
-                  size='40px'
+                  size={42}
                   className='hover:bg-slate-200 rounded p-1'
                 />
               </a>

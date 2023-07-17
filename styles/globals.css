@@ -7,6 +7,7 @@ body {
 }
 
 /* Smooth Scrollbar */
+
 @layer base {
   html {
     scrollbar-width: normal;
@@ -27,4 +28,15 @@ body {
   }
 }
 
-/* Modal Css Test*/
+.overflow-inactive {
+  overflow: hidden;
+}
+.overflow-active {
+  overflow: visible;
+}
+
+.higher-index {
+  position: relative;
+  z-index: 99999;
+  color: red;
+}

@@ -8,8 +8,8 @@ const About = () => {
   // }, [])
   return (
     <>
-      <div id='about' className='h-12'></div>
-      <section className='container mx-auto border-b max-w-screen-lg p-3'>
+      <div id='about' className='h-10'></div>
+      <section className='container mx-auto border-b max-w-screen-lg p-3 mt-10'>
         <div
           id='#About'
           className='border-b text-2xl font-bold py-6'
