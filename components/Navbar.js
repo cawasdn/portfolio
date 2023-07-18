@@ -1,10 +1,9 @@
 import Link from 'next/link'
-import Modal from './Utilities/Modal' //Modal Import
 import { TbExternalLink } from 'react-icons/tb'
 import { Squash as Hamburger } from 'hamburger-react'
 import { useState, useEffect } from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-
+import Modal from './Utilities/Modal' //Modal Import
 import useSound from 'use-sound'
 
 const Navbar = () => {

@@ -13,9 +13,9 @@ const Hero = () => {
   return (
     <>
       <section className='container relative mx-auto flex flex-col justify-center items-center text-left min-h-[100vh] max-w-screen-lg'>
-        <div className='p-4 md:p-0 md:w-[800px] md:absolute md:left-0 md:pl-3'>
+        <div className='p-4 md:pl-3 '>
           <h2
-            className='text-3xl font-bold md:text-6xl'
+            className='text-3xl font-bold md:text-7xl'
             data-aos='fade-up'
             data-aos-delay='200'
             data-aos-duration='500'
@@ -23,7 +23,7 @@ const Hero = () => {
             Hello, I'm Daniel.
           </h2>
           <p
-            className='text-xl pt-4 md:text-3xl'
+            className='text-xl pt-4 md:text-4xl md:leading-[50px]'
             data-aos='fade-up'
             data-aos-delay='300'
             data-aos-duration='500'
@@ -55,7 +55,7 @@ const Hero = () => {
             </Tippy>
           </div>
           <div
-            className='absolute bottom-0 pl-7 mx-auto space-x-6 py-7  text-md text-center md:text-start md:pl-0 md:relative'
+            className='absolute bottom-0 pl-7 mx-auto space-x-6 py-7  text-md text-center md:text-start md:pl-0 md:relative md:text-xl'
             data-aos='fade-up'
             data-aos-delay='500'
             data-aos-duration='500'

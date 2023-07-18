@@ -16,7 +16,7 @@ const modal = ({ closeModal }) => {
   // ************
   useEffect(() => {
     handleContactClickSound()
-  })
+  }, [playClick])
 
   return (
     <div className='modalBackground fixed left-0 right-0 h-screen bottom-0 z-50 bg-black/60 flex justify-center items-center'>
