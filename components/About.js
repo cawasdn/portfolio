@@ -13,13 +13,14 @@ const About = () => {
       <section className='container mx-auto border-b max-w-screen-lg p-3 mt-10'>
         <div
           id='#About'
-          className='border-b text-2xl font-bold py-6'
+          className='text-2xl font-bold py-6'
           // data-aos="fade-up"
           // data-aos-delay="300"
           // data-aos-duration="500"
         >
           About Me
         </div>
+        <hr />
         {/* About Container */}
         <div data-aos='fade-up' data-aos-delay='300' data-aos-duration='500'>
           <div className='flex flex-col items-center md:flex-row md:justify-between md:mt-8'>
