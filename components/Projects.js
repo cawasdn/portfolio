@@ -2,6 +2,8 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 
+import { Slider } from './ImageSlider'
+
 const Projects = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 })
@@ -9,9 +11,9 @@ const Projects = () => {
   return (
     <>
       <div id='projects' className='h-12'></div>
-      <section className='container mx-auto max-w-screen-lg p-3'>
+      <section className='mx-auto px-2 max-w-screen-lg md:px-8'>
         <div
-          className=' text-2xl font-bold py-6'
+          className='text-2xl font-bold py-6'
           // data-aos="fade-up"
           // data-aos-delay="200"
           // data-aos-duration="500"
@@ -28,8 +30,8 @@ const Projects = () => {
               data-aos-delay='200'
               data-aos-duration='500'
             >
-              <div className='grid gap-8 md:grid md:grid-cols-2 md:mb-10'>
-                <div className='flex flex-col gap-3'>
+              <div className='grid gap-8 md:grid md:grid-cols-1 md:mb-10 xl:grid-cols-2'>
+                <div className='flex flex-col gap-3 '>
                   <div className='Portfolio text-4xl font-bold'>
                     My Portfolio v2
                   </div>
@@ -53,11 +55,12 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-                <img
+                <Slider />
+                {/* <img
                   src='images/portfolio-1.jpg'
                   alt=''
                   className=' w-[500px]  border-2'
-                />
+                /> */}
               </div>
             </div>
 
@@ -68,7 +71,7 @@ const Projects = () => {
               data-aos-delay='300'
               data-aos-duration='500'
             >
-              <div className='grid gap-8 md:grid md:grid-cols-2'>
+              <div className='grid gap-8 md:grid md:grid-cols-1 md:mb-10 xl:grid-cols-2'>
                 <div className='space-y-4'>
                   <div className='Portfolio text-4xl font-bold'>
                     My Portfolio
@@ -93,11 +96,12 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-                <img
+                <Slider />
+                {/* <img
                   src='images/portfolio-1.jpg'
                   alt=''
                   className=' w-[500px]  border-2'
-                />
+                /> */}
               </div>
             </div>
           </div>

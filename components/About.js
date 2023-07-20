@@ -10,10 +10,10 @@ const About = () => {
   return (
     <>
       <div id='about' className='h-3'></div>
-      <section className='container mx-auto border-b max-w-screen-lg p-3 mt-10'>
+      <section className='container mx-auto border-b max-w-screen-lg p-3 mt-10 md:px-8'>
         <div
           id='#About'
-          className='text-2xl font-bold py-6'
+          className='text-2xl font-bold pb-6'
           // data-aos="fade-up"
           // data-aos-delay="300"
           // data-aos-duration="500"
@@ -23,8 +23,8 @@ const About = () => {
         <hr />
         {/* About Container */}
         <div data-aos='fade-up' data-aos-delay='300' data-aos-duration='500'>
-          <div className='flex flex-col items-center md:flex-row md:justify-between md:mt-8'>
-            <div className='flex flex-col text-xl items-center mb-8 md:w-[600px] md:items-start '>
+          <div className='flex flex-col items-center mt-4 xl:grid xl:grid-cols-2'>
+            <div className='flex flex-col text-xl items-center mb-8 md:items-start'>
               <p className='mt-3'>
                 Hi! I'm Daniel Cawas. I have a{' '}
                 <strong>
@@ -35,14 +35,10 @@ const About = () => {
                 and{' '}
                 <strong>develop web experiences and web applications. </strong>
               </p>
-              <div className='mt-8'>
-                {' '}
-                Here are the technologies I've been working with.
-              </div>
 
               <Skills />
             </div>
-            <div className='md:pr-8 mb-10'>
+            <div className='mx-auto'>
               <img
                 src='images/profile.webp'
                 alt=''

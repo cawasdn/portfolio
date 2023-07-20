@@ -30,16 +30,16 @@ const NavDesktop = () => {
   }
 
   return (
-    <>
+    <header
+      className={
+        scrollPosition > 100
+          ? 'shadow fixed w-full bg-white z-10'
+          : 'shadow-none fixed w-full bg-white z-10'
+      }
+    >
       <div>{console.log(sectionPosition)}</div>
-      <nav
-        className={
-          scrollPosition > 100
-            ? 'shadow fixed w-full bg-white z-10'
-            : 'shadow-none fixed w-full bg-white z-10 '
-        }
-      >
-        <div className='container mx-auto flex justify-between items-center h-16  max-w-screen-lg p-4 md:p-0'>
+      <nav className=''>
+        <div className='mx-auto flex justify-between items-center h-16  max-w-screen-lg p-4 md:p-0'>
           <Link href='/' onClick={handleClickSound}>
             <div className='logo uppercase font-bold'>
               <img
@@ -90,7 +90,7 @@ const NavDesktop = () => {
         {/* Modal Call */}
         {openModal && <Modal closeModal={setOpenModal} />}
       </nav>
-    </>
+    </header>
   )
 }
 
