@@ -38,25 +38,25 @@ export const Slider = () => {
       slidesPerView={1}
       navigation={true}
       effect={'slide'}
-      // autoplay={{ delay: 1000 }}
+      // autoplay={{ delay: 2000 }}
       loop={true}
       speed={800}
       pagination={{ clickable: true }}
     >
       <SwiperSlide>
-        <img src='images/portfolio-1.jpg' alt='' srcset='' />
+        <img src='images/portfolio-1.jpg' alt='' />
       </SwiperSlide>
       <SwiperSlide>
-        <img src='images/portfolio-1.jpg' alt='' srcset='' />
+        <img src='images/portfolio-1.jpg' alt='' />
       </SwiperSlide>
       <SwiperSlide>
-        <img src='images/portfolio-1.jpg' alt='' srcset='' />
+        <img src='images/portfolio-1.jpg' alt='' />
       </SwiperSlide>
       <SwiperSlide>
-        <img src='images/portfolio-1.jpg' alt='' srcset='' />
+        <img src='images/portfolio-1.jpg' alt='' />
       </SwiperSlide>
       <SwiperSlide>
-        <img src='images/portfolio-1.jpg' alt='' srcset='' />
+        <img src='images/portfolio-1.jpg' alt='' />
       </SwiperSlide>
     </Swiper>
   )

@@ -39,7 +39,7 @@ const NavDesktop = () => {
     >
       <div>{console.log(sectionPosition)}</div>
       <nav className=''>
-        <div className='mx-auto flex justify-between items-center h-16  max-w-screen-lg p-4 md:p-0'>
+        <div className='mx-auto flex justify-between items-center h-16 max-w-screen-lg p-6'>
           <Link href='/' onClick={handleClickSound}>
             <div className='logo uppercase font-bold'>
               <img
@@ -73,12 +73,19 @@ const NavDesktop = () => {
             >
               <li>Contact</li>
             </div>
-            <Link href='/' onClick={handleClickSound}>
-              <div className='flex items-center space-x-1 hover:bg-slate-200 px-2 py-1 rounded cursor-pointer'>
-                <li>Resume</li>
-                <TbExternalLink />
-              </div>
-            </Link>
+            {/* <Link href='/' onClick={handleClickSound}> */}
+            <div className='flex items-center space-x-1 hover:bg-slate-200 px-2 py-1 rounded cursor-pointer'>
+              <li>
+                <a
+                  href='https://firebasestorage.googleapis.com/v0/b/fir-9-2d5f7.appspot.com/o/Res.pdf?alt=media&token=07b4d751-c7f1-439f-b5b1-b404aeb27226'
+                  target='_blank'
+                >
+                  Resume
+                </a>
+              </li>
+              <TbExternalLink />
+            </div>
+            {/* </Link> */}
           </ul>
 
           {/* BURGER MENU */}

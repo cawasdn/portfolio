@@ -5,6 +5,7 @@ import {
   SiTailwindcss,
   SiExpress,
   SiMongodb,
+  SiFirebase,
 } from 'react-icons/si'
 
 export const Techs = [
@@ -50,15 +51,19 @@ export const Techs = [
         name: 'MongoDB',
         logo: <SiMongodb />,
       },
-    ],
-  },
-
-  {
-    four: [
       {
-        name: 'Pangalan',
-        logo: <SiMongodb />,
+        name: 'Firebase',
+        logo: <SiFirebase />,
       },
     ],
   },
+
+  // {
+  //   four: [
+  //     {
+  //       name: 'Pangalan',
+  //       logo: <SiMongodb />,
+  //     },
+  //   ],
+  // },
 ]

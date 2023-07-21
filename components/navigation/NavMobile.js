@@ -76,7 +76,14 @@ const NavMobile = () => {
                 <li>Contact</li>
               </div>
               <div className='flex items-center space-x-1' onClick={handleNav}>
-                <li>Resume</li>
+                <li>
+                  <a
+                    href='https://firebasestorage.googleapis.com/v0/b/fir-9-2d5f7.appspot.com/o/Res.pdf?alt=media&token=07b4d751-c7f1-439f-b5b1-b404aeb27226'
+                    target='_blank'
+                  >
+                    Resume
+                  </a>
+                </li>
                 <TbExternalLink />
               </div>
               <div className='flex space-x-5'>

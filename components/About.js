@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
       <div id='about' className='h-3'></div>
-      <section className='container mx-auto border-b max-w-screen-lg p-3 mt-10 md:px-8'>
+      <section className='container mx-auto max-w-screen-lg p-3 mt-10 md:px-8'>
         <div
           id='#About'
           className='text-2xl font-bold pb-6'
@@ -47,6 +47,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        <hr />
       </section>
     </>
   )

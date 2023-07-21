@@ -12,7 +12,7 @@ const Hero = () => {
   // }, [])
   return (
     <>
-      <section className='container relative mx-auto flex flex-col justify-center items-center text-left min-h-[100vh] max-w-screen-lg md:min-h-[100vh]'>
+      <section className='container relative mx-auto flex flex-col justify-center items-center text-left min-h-[100vh] max-w-screen-lg md:min-h-[100vh] '>
         <div className='p-4 md:pl-16 xl:pl-3 '>
           <h2
             className='text-3xl font-bold md:text-7xl'
