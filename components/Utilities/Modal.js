@@ -1,22 +1,24 @@
 import { MdClose } from 'react-icons/md'
-import { SiMinutemailer } from 'react-icons/si'
-import { useEffect } from 'react'
+import { SiMinutemailer, SiVuedotjs } from 'react-icons/si'
+import { useState } from 'react'
 
-import useSound from 'use-sound'
-
-// md:h-[580px] md:w-[500px]
-// h-full w-full
+async function handleOnSubmit(e) {
+  e.preventDefault()
+  const formData = {}
+  Array.from(e.currentTarget.elements).forEach((field) => {
+    if (!field.name) return
+    formData[field.name] = field.value
+  })
+  fetch('/api/mail', {
+    method: 'post',
+    body: JSON.stringify(formData),
+  })
+  console.log(formData)
+  setSucces('Email Sent')
+}
 
 const modal = ({ closeModal }) => {
-  // Menu Click Sound
-  const [playClick] = useSound('/sounds/Click.mp3')
-  const handleContactClickSound = () => {
-    playClick()
-  }
-  // ************
-  useEffect(() => {
-    handleContactClickSound()
-  }, [playClick])
+  const [success, setSucces] = useState('not sent')
 
   return (
     <div className='modalBackground fixed left-0 right-0 h-screen bottom-0 z-50 bg-black/60 flex justify-center items-center'>
@@ -46,46 +48,55 @@ const modal = ({ closeModal }) => {
           <div className='title font-bold text-2xl mb-7'>
             <h1>Get in Touch</h1>
           </div>
-          <div className='body flex flex-col gap-3'>
-            <div>
-              <p>Name</p>
-              <input
-                type='text'
-                placeholder='Your Name'
-                required
-                className='w-full bg-slate-100 h-10 p-2'
-              />
-            </div>
-            <div>
-              <p>Email</p>
-              <input
-                type='Email'
-                placeholder='Your Email'
-                required
-                className='w-full bg-slate-100 h-10 p-2'
-              />
-            </div>
-            <div>
-              <p>Message</p>
-              <textarea
-                name=''
-                id=''
-                cols='20'
-                rows='3'
-                placeholder='Your Message'
-                required
-                className='w-full bg-slate-100 p-2 resize-none'
-              ></textarea>
-            </div>
 
+          {/* form */}
+          <form method='post' onSubmit={handleOnSubmit}>
+            <p>
+              <label htmlfor='name'>Name</label>
+            </p>
+            <input
+              id='name'
+              type='text'
+              name='name'
+              placeholder='Your Name'
+              required
+              className='w-full bg-slate-100 h-10 p-2'
+            />
+
+            <p>
+              <label htmlfor='email'>Email</label>
+            </p>
+            <input
+              id='email'
+              type='email'
+              name='email'
+              placeholder='Your Email'
+              required
+              className='w-full bg-slate-100 h-10 p-2'
+            />
+            <p>
+              <label htmlfor='message'>Message</label>
+            </p>
+            <textarea
+              name='message'
+              id='message'
+              cols='20'
+              rows='3'
+              placeholder='Your Message'
+              className='w-full bg-slate-100 p-2 resize-none'
+            ></textarea>
             <div className='md:py-2 md:mb-4 md:mt-3 rounded hover:bg-slate-200 transition-all duration-500'>
-              <button className='flex flex-row justify-center items-center w-full gap-2'>
-                <p>Send</p> <SiMinutemailer size={18} />
+              <button
+                type='submit'
+                className='flex flex-row justify-center items-center w-full gap-2'
+              >
+                Send
+                <SiMinutemailer size={18} />
               </button>
             </div>
-            <a href='' className=''>
+            <a>
               <p className='text-[11px] md:tracking-wider block md:text-[15px]'>
-                or use this -
+                or use this
                 <strong>
                   <span className='underline p-2 hover:bg-slate-200 rounded transition-all duration-500'>
                     decawas@gmail.com
@@ -93,12 +104,9 @@ const modal = ({ closeModal }) => {
                 </strong>
               </p>
             </a>
-          </div>
+            <div>{success}</div>
+          </form>
         </div>
-        {/* <div className='footer'>
-          <button onClick={() => closeModal(false)}>Cancel</button>
-          <button>Continue</button>
-        </div> */}
       </div>
     </div>
   )
