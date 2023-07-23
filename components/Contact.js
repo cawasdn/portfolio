@@ -10,8 +10,8 @@ const Contact = () => {
       <div className='relative container mx-auto md:max-w-screen-lg flex flex-col items-center justify-center mt-24 space-y-6'>
         <div className='text-6xl font-bold text-center'>Say Hi to Daniel.</div>
         <div className='text-center pb-24'>
-          I would love to hear from you. Whether it&apos;s a project a job
-          opportunity <br /> or just a chat. Feel free to contact me
+          I would love to hear from you. Whether it's a project, a job
+          opportunity, <br /> or just a chat. Feel free to contact me.
         </div>
         <p data-aos-delay='700' className='arrow-down-contact'>
           <BsArrowDown size={24} />

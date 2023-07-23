@@ -20,7 +20,7 @@ const Hero = () => {
             data-aos-delay='200'
             data-aos-duration='500'
           >
-            Hello, I&apos;m Daniel
+            Hello, I'm Daniel.
           </h2>
           <p
             className='text-xl pt-4 md:text-4xl md:leading-[50px]'

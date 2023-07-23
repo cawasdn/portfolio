@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <>
       <div className='self-center mt-8'>
-        Here are the technologies I&apos;ve been working with
+        Here are the technologies I've been working with.
       </div>
       {/* <div className='flex self-center'> */}
       <div>

@@ -1,24 +1,65 @@
 import { MdClose } from 'react-icons/md'
 import { SiMinutemailer, SiVuedotjs } from 'react-icons/si'
+import { useEffect } from 'react'
 import { useState } from 'react'
-
-async function handleOnSubmit(e) {
-  e.preventDefault()
-  const formData = {}
-  Array.from(e.currentTarget.elements).forEach((field) => {
-    if (!field.name) return
-    formData[field.name] = field.value
-  })
-  fetch('/api/mail', {
-    method: 'post',
-    body: JSON.stringify(formData),
-  })
-  console.log(formData)
-  setSucces('Email Sent')
-}
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import useSound from 'use-sound'
+import Confetti from './Confetti'
 
 const modal = ({ closeModal }) => {
   const [success, setSucces] = useState('not sent')
+
+  const [confetti, setConfetti] = useState(false)
+
+  const resolveAfter3Sec = new Promise((resolve) => setTimeout(resolve, 3000))
+
+  // Menu Click Sound
+  const [playClick] = useSound('/sounds/Click.mp3')
+  const handleContactClickSound = () => {
+    playClick()
+  }
+  // ************
+  useEffect(() => {
+    handleContactClickSound()
+  }, [playClick])
+
+  async function handleOnSubmit(e) {
+    e.preventDefault()
+    const formData = {}
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return
+      formData[field.name] = field.value
+    })
+    fetch('/api/mail', {
+      method: 'post',
+      body: JSON.stringify(formData),
+    })
+    console.log(formData)
+    // setSucces('Email Sent')
+
+    toast.promise(resolveAfter3Sec, {
+      pending: 'Sending Email...',
+      success: 'Email Sent👌',
+      error: 'Sending Failed',
+    })
+
+    // toast.success('Email Sent! ', {
+    //   position: 'top-center',
+    //   autoClose: 1500,
+    //   hideProgressBar: false,
+    //   closeOnClick: false,
+    //   pauseOnHover: false,
+    //   draggable: false,
+    //   progress: undefined,
+    //   theme: 'light',
+    // })
+    document.querySelector('form').reset()
+    setConfetti(true)
+    setTimeout(() => {
+      setConfetti(false)
+    }, 10000)
+  }
 
   return (
     <div className='modalBackground fixed left-0 right-0 h-screen bottom-0 z-50 bg-black/60 flex justify-center items-center'>
@@ -50,7 +91,7 @@ const modal = ({ closeModal }) => {
           </div>
 
           {/* form */}
-          <form method='post' onSubmit={handleOnSubmit}>
+          <form id='form' method='post' onSubmit={handleOnSubmit}>
             <p>
               <label htmlfor='name'>Name</label>
             </p>
@@ -96,7 +137,7 @@ const modal = ({ closeModal }) => {
             </div>
             <a>
               <p className='text-[11px] md:tracking-wider block md:text-[15px]'>
-                or use this
+                or use this -
                 <strong>
                   <span className='underline p-2 hover:bg-slate-200 rounded transition-all duration-500'>
                     decawas@gmail.com
@@ -108,6 +149,19 @@ const modal = ({ closeModal }) => {
           </form>
         </div>
       </div>
+      <ToastContainer
+        position='top-center'
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable={false}
+        pauseOnHover={false}
+        theme='light'
+      />
+      {confetti && <Confetti gravity={0.3} openConfettee={setConfetti} />}
     </div>
   )
 }
