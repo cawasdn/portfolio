@@ -20,7 +20,7 @@ const Hero = () => {
             data-aos-delay='200'
             data-aos-duration='500'
           >
-            Hello, I'm Daniel.
+            Hello&#8218; I'm Daniel.
           </h2>
           <p
             className='text-xl pt-4 md:text-4xl md:leading-[50px]'
@@ -28,8 +28,8 @@ const Hero = () => {
             data-aos-delay='300'
             data-aos-duration='500'
           >
-            I am a frontend Developer, currently focused on building beautiful
-            web interfaces and web applications
+            I am a frontend Developer&#8218; currently focused on building
+            beautiful web interfaces and web applications.
           </p>
           <div
             className='flex space-x-4 pt-6 md:pt-6 md:space-x-9'
