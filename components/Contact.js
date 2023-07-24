@@ -24,8 +24,6 @@ const Contact = () => {
             const overflow = document
               .querySelector('body')
               .classList.toggle('overflow-inactive')
-            // document.body.style.overflow = 'hidden'
-            // document.body.style.filter = 'blur(20px)'
           }}
         >
           <p>Email</p> <SiMinutemailer size={18} />
