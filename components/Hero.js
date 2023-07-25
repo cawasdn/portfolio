@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import Image from 'next/image'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import Link from 'next/link'
 // import AOS from 'aos'
@@ -70,7 +70,13 @@ const Hero = () => {
             </button>
           </div>
         </div>
-
+        <Image
+          src='/images/profile.jpg'
+          alt='profile image'
+          className='rounded-full'
+          width={224}
+          height={224}
+        />
         {/* MouseAnimation */}
         <div className='absolute bottom-0'>
           <div className='scroll-down'>
