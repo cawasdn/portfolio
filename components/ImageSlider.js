@@ -23,43 +23,17 @@ export const Slider = () => {
       loop={true}
     >
       <SwiperSlide>
-        <Image
-          src='/images/proj-1/1.jpg'
+        <img
+          src='images/proj-1/1.jpg'
           alt='Demo Image'
-          width={699}
-          height={387}
+          className='w-[699] h-[387]'
         />
       </SwiperSlide>
       <SwiperSlide>
-        <Image
-          src='/images/proj-1/2.jpg'
+        <img
+          src='images/proj-1/2.jpg'
           alt='Demo Image 2'
-          width={699}
-          height={387}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src='/images/proj-1/3.jpg'
-          alt='Demo Image 3'
-          width={699}
-          height={387}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src='/images/proj-1/1.jpg'
-          alt='Demo Image 4'
-          width={699}
-          height={387}
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src='/images/proj-1/1.jpg'
-          alt='Demo Image 5'
-          width={699}
-          height={387}
+          className='w-[699] h-[387]'
         />
       </SwiperSlide>
     </Swiper>
@@ -80,19 +54,17 @@ export const Slider2 = () => {
       loop={true}
     >
       <SwiperSlide>
-        <Image
-          src='/images/proj-2/1.jpg'
+        <img
+          src='images/proj-2/1.jpg'
           alt='Demo Image 5'
-          width={699}
-          height={387}
+          className='w-[699] h-[387]'
         />
       </SwiperSlide>
       <SwiperSlide>
-        <Image
-          src='/images/proj-2/1.jpg'
+        <img
+          src='images/proj-2/1.jpg'
           alt='Demo Image 5'
-          width={699}
-          height={387}
+          className='w-[699] h-[387]'
         />
       </SwiperSlide>
     </Swiper>
