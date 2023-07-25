@@ -46,9 +46,9 @@ export const Slider2 = () => {
       pagination={true}
       loop={true}
     >
-      {Data[0].portfoliov2.map((image) => {
+      {Data[0].portfoliov2.map((image, index) => {
         return (
-          <SwiperSlide>
+          <SwiperSlide key={index}>
             <Image src={image.img} width={699} height={387} />
           </SwiperSlide>
         )
