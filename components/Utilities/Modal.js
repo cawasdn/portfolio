@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Confetti from './Confetti'
 
-const modal = ({ closeModal }) => {
+const Modal = ({ closeModal }) => {
   const [confetti, setConfetti] = useState(false)
   const resolveAfter3Sec = new Promise((resolve) => setTimeout(resolve, 3000))
 
@@ -150,4 +150,4 @@ const modal = ({ closeModal }) => {
   )
 }
 
-export default modal
+export default Modal
