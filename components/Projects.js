@@ -1,7 +1,7 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
-import { Slider, Slider2 } from './ImageSlider'
+import { Slider } from './ImageSlider'
 
 const Projects = () => {
   useEffect(() => {
@@ -54,7 +54,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-                <Slider2 />
+                <Slider />
                 {/* <img
                   src='images/portfolio-1.jpg'
                   alt=''
