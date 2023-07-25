@@ -4,25 +4,12 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import useSound from 'use-sound'
 import Confetti from './Confetti'
 
 const modal = ({ closeModal }) => {
   const [success, setSucces] = useState('not sent')
-
   const [confetti, setConfetti] = useState(false)
-
   const resolveAfter3Sec = new Promise((resolve) => setTimeout(resolve, 3000))
-
-  // Menu Click Sound
-  const [playClick] = useSound('/sounds/Click.mp3')
-  const handleContactClickSound = () => {
-    playClick()
-  }
-  // ************
-  useEffect(() => {
-    handleContactClickSound()
-  }, [playClick])
 
   async function handleOnSubmit(e) {
     e.preventDefault()

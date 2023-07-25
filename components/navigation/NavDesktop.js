@@ -1,11 +1,9 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import Modal from '../Utilities/Modal' //Modal Import
 import { TbExternalLink } from 'react-icons/tb'
 import { Squash as Hamburger } from 'hamburger-react'
 import { useState } from 'react'
 import { useScrollPosition } from '../../hooks/useScrollPosition'
-import useSound from 'use-sound'
 
 const NavDesktop = () => {
   const scrollPosition = useScrollPosition()
@@ -15,17 +13,8 @@ const NavDesktop = () => {
   const [openModal, setOpenModal] = useState(false)
   const [nav, setNav] = useState(false)
 
-  // Menu Click Sound
-  const [playClick] = useSound('/sounds/Click.mp3')
-  const handleClickSound = () => {
-    playClick()
-  }
-  // ************
-
   const handleNav = () => {
     setNav(!nav)
-    handleClickSound()
-
     const overflow = document.querySelector('body')
     overflow.classList.toggle('overflow-inactive')
   }
@@ -41,7 +30,7 @@ const NavDesktop = () => {
       <div>{console.log(sectionPosition)}</div>
       <nav className=''>
         <div className='mx-auto flex justify-between items-center h-16 max-w-screen-lg p-6'>
-          <Link href='/' onClick={handleClickSound}>
+          <Link href='/'>
             <div className='logo uppercase font-bold'>
               DANIELC
               {/* <Image
@@ -52,12 +41,12 @@ const NavDesktop = () => {
             </div>
           </Link>
           <ul className='hidden flex-row space-x-6 md:flex'>
-            <Link href='#projects' onClick={handleClickSound}>
+            <Link href='#projects'>
               <div className='flex items-center space-x-1 hover:bg-slate-200 px-2 py-1 rounded cursor-pointer'>
                 <li>Projects</li>
               </div>
             </Link>
-            <Link href='#about' onClick={handleClickSound}>
+            <Link href='#about'>
               <div className='flex items-center space-x-1 hover:bg-slate-200 px-2 py-1 rounded cursor-pointer'>
                 <li>About</li>
               </div>
@@ -75,7 +64,6 @@ const NavDesktop = () => {
             >
               <li>Contact</li>
             </div>
-            {/* <Link href='/' onClick={handleClickSound}> */}
             <div className='flex items-center space-x-1 hover:bg-slate-200 px-2 py-1 rounded cursor-pointer'>
               <li>
                 <a

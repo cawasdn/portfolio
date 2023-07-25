@@ -4,7 +4,7 @@ import { TbExternalLink } from 'react-icons/tb'
 import { Squash as Hamburger } from 'hamburger-react'
 import { useState, useEffect } from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import useSound from 'use-sound'
+
 import { useScrollPosition } from '../../hooks/useScrollPosition'
 
 const NavMobile = () => {
@@ -14,14 +14,6 @@ const NavMobile = () => {
     setNav(!nav)
     handleClickSound()
   }
-
-  // Menu Click Sound
-  const [playClick] = useSound('/sounds/Click.mp3')
-
-  const handleClickSound = () => {
-    playClick()
-  }
-  // ************
 
   const scrollPosition = useScrollPosition()
 
@@ -36,7 +28,7 @@ const NavMobile = () => {
             : 'bg-white shadow-none fixed flex justify-between  items-center h-16 w-full p-4 z-10'
         }
       >
-        <Link href='/' onClick={handleClickSound}>
+        <Link href='/'>
           <div className='logo uppercase font-bold'>
             DANIELC
             {/* <img
