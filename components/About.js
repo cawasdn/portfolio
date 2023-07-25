@@ -36,7 +36,7 @@ const About = () => {
             <div className='mx-auto mb-6'>
               <Image
                 src='/images/profile.webp'
-                alt=''
+                alt='profile'
                 className='rounded-full'
                 width={224}
                 height={224}

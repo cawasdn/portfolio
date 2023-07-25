@@ -40,3 +40,6 @@ body {
   z-index: 99999;
   color: red;
 }
+.swiper-wrapper {
+  box-sizing: 'border-box';
+}
