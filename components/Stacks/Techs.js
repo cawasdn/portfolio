@@ -57,13 +57,4 @@ export const Techs = [
       },
     ],
   },
-
-  // {
-  //   four: [
-  //     {
-  //       name: 'Pangalan',
-  //       logo: <SiMongodb />,
-  //     },
-  //   ],
-  // },
 ]

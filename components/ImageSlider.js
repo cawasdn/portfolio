@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Navigation, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import Data from '../assets/project.json'
 
 //CoreSwiperCss
 import 'swiper/css'
@@ -22,24 +23,24 @@ export const Slider = () => {
       pagination={true}
       loop={true}
     >
-      <SwiperSlide>
-        <img
-          src='images/proj-1/1.jpg'
-          alt='Demo Image'
-          className='w-[699] h-[387]'
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img
-          src='images/proj-1/2.jpg'
-          alt='Demo Image 2'
-          className='w-[699] h-[387]'
-        />
-      </SwiperSlide>
+      {Data.map((image) => {
+        return (
+          <>
+            <SwiperSlide>
+              <Image src={image.img1} width={699} height={387} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={image.img2} width={699} height={387} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={image.img3} width={699} height={387} />
+            </SwiperSlide>
+          </>
+        )
+      })}
     </Swiper>
   )
 }
-
 export const Slider2 = () => {
   return (
     <Swiper
@@ -53,20 +54,15 @@ export const Slider2 = () => {
       pagination={true}
       loop={true}
     >
-      <SwiperSlide>
-        <img
-          src='images/proj-2/1.jpg'
-          alt='Demo Image 5'
-          className='w-[699] h-[387]'
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img
-          src='images/proj-2/1.jpg'
-          alt='Demo Image 5'
-          className='w-[699] h-[387]'
-        />
-      </SwiperSlide>
+      {Data.map((image) => {
+        return (
+          <>
+            <SwiperSlide>
+              <Image src={image.portfoliov2} width={699} height={387} />
+            </SwiperSlide>
+          </>
+        )
+      })}
     </Swiper>
   )
 }
