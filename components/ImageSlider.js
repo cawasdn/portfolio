@@ -46,42 +46,47 @@ export const Slider = () => {
     >
       <SwiperSlide>
         <Image
-          src='images/proj-1/1.jpg'
+          src='/images/proj-1/1.jpg'
           alt='Demo Image'
           width={699}
           height={387}
+          className='swiper-lazy'
         />
       </SwiperSlide>
       <SwiperSlide>
         <Image
-          src='images/proj-1/2.jpg'
+          src='/images/proj-1/2.jpg'
           alt='Demo Image 2'
           width={699}
           height={387}
+          className='swiper-lazy'
         />
       </SwiperSlide>
       <SwiperSlide>
         <Image
-          src='images/proj-1/3.jpg'
+          src='/images/proj-1/3.jpg'
           alt='Demo Image 3'
           width={699}
           height={387}
+          className='swiper-lazy'
         />
       </SwiperSlide>
       <SwiperSlide>
         <Image
-          src='images/proj-1/1.jpg'
+          src='/images/proj-1/1.jpg'
           alt='Demo Image 4'
           width={699}
           height={387}
+          className='swiper-lazy'
         />
       </SwiperSlide>
       <SwiperSlide>
         <Image
-          src='images/proj-1/1.jpg'
+          src='/images/proj-1/1.jpg'
           alt='Demo Image 5'
           width={699}
           height={387}
+          className='swiper-lazy'
         />
       </SwiperSlide>
     </Swiper>
@@ -116,6 +121,7 @@ export const Slider2 = () => {
           alt='Demo Image 5'
           width={699}
           height={387}
+          className='swiper-lazy'
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -124,6 +130,7 @@ export const Slider2 = () => {
           alt='Demo Image 5'
           width={699}
           height={387}
+          className='swiper-lazy'
         />
       </SwiperSlide>
     </Swiper>
