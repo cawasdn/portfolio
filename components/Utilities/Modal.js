@@ -1,13 +1,11 @@
 import { MdClose } from 'react-icons/md'
 import { SiMinutemailer, SiVuedotjs } from 'react-icons/si'
-import { useEffect } from 'react'
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Confetti from './Confetti'
 
 const modal = ({ closeModal }) => {
-  const [success, setSucces] = useState('not sent')
   const [confetti, setConfetti] = useState(false)
   const resolveAfter3Sec = new Promise((resolve) => setTimeout(resolve, 3000))
 
@@ -132,7 +130,6 @@ const modal = ({ closeModal }) => {
                 </strong>
               </p>
             </a>
-            <div>{success}</div>
           </form>
         </div>
       </div>
