@@ -38,11 +38,12 @@ const NavMobile = () => {
       >
         <Link href='/' onClick={handleClickSound}>
           <div className='logo uppercase font-bold'>
-            <img
+            DANIELC
+            {/* <img
               src='images/logo.png'
               alt='logo'
               className='h-12 drop-shadow'
-            />
+            /> */}
           </div>
         </Link>
         <div

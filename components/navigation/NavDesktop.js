@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Modal from '../Utilities/Modal' //Modal Import
 import { TbExternalLink } from 'react-icons/tb'
 import { Squash as Hamburger } from 'hamburger-react'
@@ -42,11 +43,12 @@ const NavDesktop = () => {
         <div className='mx-auto flex justify-between items-center h-16 max-w-screen-lg p-6'>
           <Link href='/' onClick={handleClickSound}>
             <div className='logo uppercase font-bold'>
-              <img
+              DANIELC
+              {/* <Image
                 src='images/logo.png'
                 alt='logo'
                 className='h-12 drop-shadow'
-              />
+              /> */}
             </div>
           </Link>
           <ul className='hidden flex-row space-x-6 md:flex'>
