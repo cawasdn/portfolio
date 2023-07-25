@@ -35,7 +35,7 @@ const About = () => {
             </div>
             <div className='mx-auto mb-6'>
               <Image
-                src='/images/profile.webp'
+                src='/images/profile.jpg'
                 alt='profile'
                 className='rounded-full'
                 width={224}
