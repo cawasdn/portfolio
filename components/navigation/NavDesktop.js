@@ -32,7 +32,7 @@ const NavDesktop = () => {
         <div className='mx-auto flex justify-between items-center h-16 max-w-screen-lg p-6'>
           <Link href='/'>
             <div className='logo uppercase font-bold'>
-              DANC
+              DANIELC
               {/* <Image
                 src='images/logo.png'
                 alt='logo'

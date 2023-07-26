@@ -35,7 +35,7 @@ const About = () => {
             </div>
             <div className='mx-auto mb-6'>
               <Image
-                src='images/profile.svg'
+                src='/images/profile.png'
                 alt='profile image'
                 className='rounded-full'
                 width={224}
