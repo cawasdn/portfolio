@@ -17,15 +17,15 @@ export const Data = [
     portfoliov2: [
       {
         id: 1,
-        img: '/img/portfolio/1.png',
+        img: '/img/portfoliov2/1.png',
       },
       {
         id: 2,
-        img: '/img/portfolio/1.png',
+        img: '/img/portfoliov2/2.png',
       },
       {
         id: 3,
-        img: '/img/portfolio/1.png',
+        img: '/img/portfoliov2/3.png',
       },
     ],
   },
