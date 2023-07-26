@@ -1,13 +1,8 @@
 import Image from 'next/image'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 
 import Skills from './Skills'
 
 const About = () => {
-  // useEffect(() => {
-  //   AOS.init({ duration: 2000 })
-  // }, [])
   return (
     <>
       <div id='about' className='h-3'></div>
@@ -35,7 +30,7 @@ const About = () => {
             </div>
             <div className='mx-auto mb-6'>
               <Image
-                src='/images/profile.png'
+                src='/profile.png'
                 alt='profile image'
                 className='rounded-full'
                 width={224}

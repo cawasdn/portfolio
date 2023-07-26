@@ -1,15 +1,12 @@
 import Image from 'next/image'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import Link from 'next/link'
-// import AOS from 'aos'
+
 import 'aos/dist/aos.css'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 
 const Hero = () => {
-  // useEffect(() => {
-  //   AOS.init({ duration: 100 })
-  // }, [])
   return (
     <>
       <section className='container relative mx-auto flex flex-col justify-center items-center text-left min-h-[100vh] max-w-screen-lg md:min-h-[100vh] '>
