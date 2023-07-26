@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect } from 'react'
+
 import Skills from './Skills'
 
 const About = () => {
@@ -34,7 +34,7 @@ const About = () => {
               <Skills />
             </div>
             <div className='mx-auto mb-6'>
-              <img
+              <Image
                 src='images/profile.svg'
                 alt='profile image'
                 className='rounded-full'
