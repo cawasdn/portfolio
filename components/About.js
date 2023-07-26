@@ -3,7 +3,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 import Skills from './Skills'
-import Profile from '../public/images/profile.png'
+import Profile from '/profile.png'
 
 const About = () => {
   // useEffect(() => {
