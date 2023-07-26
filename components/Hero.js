@@ -70,13 +70,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <Image
-          src='/images/profile.jpg'
-          alt='profile image'
-          className='rounded-full'
-          width={224}
-          height={224}
-        />
+
         {/* MouseAnimation */}
         <div className='absolute bottom-0'>
           <div className='scroll-down'>
