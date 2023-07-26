@@ -2,7 +2,7 @@
 const nodemailer = require('nodemailer')
 require('dotenv').config()
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   const body = JSON.parse(req.body)
 
   const transporter = nodemailer.createTransport({
@@ -14,6 +14,19 @@ export default function handler(req, res) {
       user: process.env.EMAIL,
       pass: process.env.PASS,
     },
+  })
+
+  await new Promise((resolve, reject) => {
+    // verify connection configuration
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error)
+        reject(error)
+      } else {
+        console.log('Server is ready to take our messages')
+        resolve(success)
+      }
+    })
   })
 
   // const message = `

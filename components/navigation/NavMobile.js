@@ -4,7 +4,6 @@ import { TbExternalLink } from 'react-icons/tb'
 import { Squash as Hamburger } from 'hamburger-react'
 import { useState, useEffect } from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-
 import { useScrollPosition } from '../../hooks/useScrollPosition'
 
 const NavMobile = () => {
@@ -12,7 +11,6 @@ const NavMobile = () => {
   const [nav, setNav] = useState(false)
   const handleNav = () => {
     setNav(!nav)
-    handleClickSound()
   }
 
   const scrollPosition = useScrollPosition()

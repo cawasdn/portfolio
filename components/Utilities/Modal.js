@@ -121,14 +121,18 @@ const Modal = ({ closeModal }) => {
               </button>
             </div>
             <a>
-              <p className='text-[11px] md:tracking-wider block md:text-[15px]'>
-                or use this -
-                <strong>
-                  <span className='underline p-2 hover:bg-slate-200 rounded transition-all duration-500'>
-                    decawas@gmail.com
-                  </span>
-                </strong>
-              </p>
+              <div className='flex flex-col text-center mt-3 space-y-3'>
+                <p className='text-[11px] md:tracking-wider block md:text-[18px]'>
+                  or use this -
+                </p>
+                <div>
+                  <strong>
+                    <span className='underline p-2 hover:bg-slate-200 rounded transition-all duration-500'>
+                      decawas@gmail.com
+                    </span>
+                  </strong>
+                </div>
+              </div>
             </a>
           </form>
         </div>
