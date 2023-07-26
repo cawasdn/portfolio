@@ -3,7 +3,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 import Skills from './Skills'
-import Profile from '../public/images/profile.png'
 
 const About = () => {
   // useEffect(() => {
@@ -36,7 +35,7 @@ const About = () => {
             </div>
             <div className='mx-auto mb-6'>
               <Image
-                src={Profile}
+                src='/images/profile.png'
                 alt='profile image'
                 className='rounded-full'
                 width={224}

@@ -26,7 +26,7 @@ export const Slider = () => {
       {Data[0].portfolio.map((image) => {
         return (
           <SwiperSlide key={image.id}>
-            <Image src={image.img} width={699} height={387} />
+            <Image src={image.img} width={699} height={387} alt='Demo Image' />
           </SwiperSlide>
         )
       })}
@@ -49,7 +49,7 @@ export const Slider2 = () => {
       {Data[0].portfoliov2.map((image) => {
         return (
           <SwiperSlide key={image.id}>
-            <Image src={image.img} alt='Demo image' width={699} height={387} />
+            <Image src={image.img} width={699} height={387} alt='Demo Image' />
           </SwiperSlide>
         )
       })}
