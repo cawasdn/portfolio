@@ -34,7 +34,7 @@ const About = () => {
               <Skills />
             </div>
             <div className='mx-auto mb-6'>
-              <Image
+              <img
                 src='/images/profile.png'
                 alt='profile image'
                 className='rounded-full'
