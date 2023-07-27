@@ -77,40 +77,48 @@ const Modal = ({ closeModal }) => {
 
           {/* form */}
           <form id='form' method='post' onSubmit={handleOnSubmit}>
-            <p>
-              <label htmlfor='name'>Name</label>
-            </p>
-            <input
-              id='name'
-              type='text'
-              name='name'
-              placeholder='Your Name'
-              required
-              className='w-full bg-slate-100 h-10 p-2'
-            />
+            <div className='space-y-3 md:space-y-5'>
+              <div>
+                <p>
+                  <label htmlfor='name'>Name</label>
+                </p>
+                <input
+                  id='name'
+                  type='text'
+                  name='name'
+                  placeholder='Your Name'
+                  required
+                  className='w-full bg-slate-100 h-10 p-2'
+                />
+              </div>
+              <div>
+                <p>
+                  <label htmlfor='email'>Email</label>
+                </p>
+                <input
+                  id='email'
+                  type='email'
+                  name='email'
+                  placeholder='Your Email'
+                  required
+                  className='w-full bg-slate-100 h-10 p-2'
+                />
+              </div>
+              <div>
+                <p>
+                  <label htmlfor='message'>Message</label>
+                </p>
+                <textarea
+                  name='message'
+                  id='message'
+                  cols='20'
+                  rows='3'
+                  placeholder='Your Message'
+                  className='w-full bg-slate-100 p-2 resize-none'
+                ></textarea>
+              </div>
+            </div>
 
-            <p>
-              <label htmlfor='email'>Email</label>
-            </p>
-            <input
-              id='email'
-              type='email'
-              name='email'
-              placeholder='Your Email'
-              required
-              className='w-full bg-slate-100 h-10 p-2'
-            />
-            <p>
-              <label htmlfor='message'>Message</label>
-            </p>
-            <textarea
-              name='message'
-              id='message'
-              cols='20'
-              rows='3'
-              placeholder='Your Message'
-              className='w-full bg-slate-100 p-2 resize-none'
-            ></textarea>
             <div className='md:py-2 md:mb-4 md:mt-3 rounded hover:bg-slate-200 transition-all duration-500'>
               <button
                 type='submit'
