@@ -6,6 +6,8 @@ import {
   SiExpress,
   SiMongodb,
   SiFirebase,
+  SiPhp,
+  SiLaravel,
 } from 'react-icons/si'
 
 export const Techs = [
@@ -54,6 +56,14 @@ export const Techs = [
       {
         name: 'Firebase',
         logo: <SiFirebase />,
+      },
+      {
+        name: 'PHP',
+        logo: <SiPhp />,
+      },
+      {
+        name: 'Laravel',
+        logo: <SiLaravel />,
       },
     ],
   },
