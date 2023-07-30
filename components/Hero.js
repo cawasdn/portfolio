@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <>
       <section className='container relative mx-auto flex flex-col justify-center items-center text-left min-h-[100vh] max-w-screen-lg md:min-h-[100vh] '>
-        <div className='p-4 md:pl-16 xl:pl-3 '>
+        <div className='p-4 md:pl-16 xl:pl-3'>
           <h2
             className='text-3xl font-bold md:text-7xl'
             data-aos='fade-up'
@@ -29,42 +29,42 @@ const Hero = () => {
             beautiful web interfaces and web applications.
           </p>
           <div
-            className='flex space-x-4 pt-6 md:pt-6 md:space-x-9'
+            className='flex flex-col flex-start pt-4 md:pt-6'
             data-aos='fade-up'
             data-aos-delay='400'
             data-aos-duration='500'
           >
-            <Tippy content='Github Profile'>
-              <a href='https://github.com/cawasdn' target='_blank'>
-                <AiFillGithub
-                  size={42}
-                  className='hover:bg-slate-200 rounded p-1'
-                />
-              </a>
-            </Tippy>
-            <Tippy content='Linkedin Profile'>
-              <a href='' target='_blank'>
-                <AiFillLinkedin
-                  size={42}
-                  className='hover:bg-slate-200 rounded p-1'
-                />
-              </a>
-            </Tippy>
-          </div>
-          <div
-            className='absolute bottom-0 pl-7 mx-auto space-x-6 py-7  text-md text-center md:text-start md:pl-0 md:relative md:text-xl'
-            data-aos='fade-up'
-            data-aos-delay='500'
-            data-aos-duration='500'
-          >
-            <Link href='#projects'>
-              <button className='hover:bg-slate-200 rounded px-2 py-1'>
-                Look at my work &#8595;
-              </button>
-            </Link>
-            <button className='hover:bg-slate-200 rounded px-2 py-1'>
-              View Resume
-            </button>
+            <div className='flex space-x-3'>
+              <Tippy content='Github Profile'>
+                <a href='https://github.com/cawasdn' target='_blank'>
+                  <AiFillGithub
+                    size={40}
+                    className='hover:bg-slate-200 rounded'
+                  />
+                </a>
+              </Tippy>
+              <Tippy content='Linkedin Profile'>
+                <a href='' target='_blank'>
+                  <AiFillLinkedin
+                    size={40}
+                    className='hover:bg-slate-200 rounded'
+                  />
+                </a>
+              </Tippy>
+            </div>
+            <div
+              className='space-x-3 mt-2  md:mt-5 md:text-xl'
+              // data-aos='fade-up'
+              // data-aos-delay='500'
+              // data-aos-duration='500'
+            >
+              <Link href='#projects'>
+                <button className='hover:bg-slate-200'>
+                  Look at my work &#8595;
+                </button>
+              </Link>
+              <button className='hover:bg-slate-200'>View Resume</button>
+            </div>
           </div>
         </div>
 
