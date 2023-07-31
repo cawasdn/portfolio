@@ -53,7 +53,7 @@ const Hero = () => {
               </Tippy>
             </div>
             <div
-              className='space-x-3 mt-2  md:mt-5 md:text-xl'
+              className='space-x-3 mt-2 md:mt-5 md:text-xl md:space-x-8'
               // data-aos='fade-up'
               // data-aos-delay='500'
               // data-aos-duration='500'
