@@ -13,6 +13,10 @@ import 'swiper/css/pagination'
 export const Slider = () => {
   return (
     <Swiper
+      style={{
+        '--swiper-navigation-color': '#000',
+        '--swiper-navigation-size': '25px',
+      }}
       className='w-[350px] md:w-[700px] xl:w-[500px] border-2 p-3'
       // install Swiper modules
       modules={[Navigation, Pagination]}
@@ -36,6 +40,11 @@ export const Slider = () => {
 export const Slider2 = () => {
   return (
     <Swiper
+      style={{
+        '--swiper-navigation-color': '#000',
+        '--swiper-navigation-size': '25px',
+        // '--swiper-pagination-color': '#000',
+      }}
       className='w-[350px] md:w-[700px] xl:w-[500px] border-2 p-3'
       // install Swiper modules
       modules={[Navigation, Pagination]}

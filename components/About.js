@@ -14,7 +14,7 @@ const About = () => {
         {/* About Container */}
         <div data-aos='fade-up' data-aos-delay='300' data-aos-duration='500'>
           <div className='flex flex-col items-center mt-4 xl:grid xl:grid-cols-2'>
-            <div className='flex flex-col text-xl items-center mb-8 md:items-start'>
+            <div className='flex flex-col items-center md:text-xl mb-8 md:items-start'>
               <p className='mt-3'>
                 Hi! I&apos;m Daniel Cawas. I have a{' '}
                 <strong>
