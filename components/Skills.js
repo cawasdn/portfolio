@@ -7,8 +7,8 @@ const Skills = () => {
         Here are the technologies I&apos;ve been working with.
       </div>
       {/* <div className='flex self-center'> */}
-      <div>
-        <div className='grid grid-cols-3 gap-2 mt-5 text-[16px] md:text-xl'>
+      <div className='mx-auto lg:mx-0'>
+        <div className='grid grid-cols-3 gap-2 mt-5 text-[16px] md:text-xl '>
           {Techs[0].first.map((tool) => (
             <div key={tool.name} className='flex items-center gap-1'>
               <span className='text-xl'>{tool.logo}</span>
