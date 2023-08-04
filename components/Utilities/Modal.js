@@ -114,6 +114,7 @@ const Modal = ({ closeModal }) => {
                   cols='20'
                   rows='3'
                   placeholder='Your Message'
+                  required
                   className='w-full bg-slate-100 p-2 resize-none'
                 ></textarea>
               </div>

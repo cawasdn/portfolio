@@ -69,7 +69,7 @@ const NavMobile = () => {
               <div className='flex items-center space-x-1' onClick={handleNav}>
                 <li>
                   <a
-                    href='https://firebasestorage.googleapis.com/v0/b/fir-9-2d5f7.appspot.com/o/Res.pdf?alt=media&token=07b4d751-c7f1-439f-b5b1-b404aeb27226'
+                    href='https://firebasestorage.googleapis.com/v0/b/fir-9-2d5f7.appspot.com/o/Resum%C3%A9.pdf?alt=media&token=a4b8eb00-bd64-416a-8897-bd959c7a8574'
                     target='_blank'
                   >
                     Resume
