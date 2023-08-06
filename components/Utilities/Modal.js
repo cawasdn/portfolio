@@ -129,20 +129,25 @@ const Modal = ({ closeModal }) => {
                 <SiMinutemailer size={18} />
               </button>
             </div>
-            <a>
-              <div className='flex flex-col text-center mt-3 space-y-3'>
-                <p className='text-[11px] md:tracking-wider block md:text-[18px]'>
-                  or use this -
-                </p>
-                <div>
-                  <strong>
-                    <span className='underline p-2 hover:bg-slate-200 rounded transition-all duration-500'>
+
+            <div className='flex flex-col text-center mt-3 space-y-3'>
+              <p className='text-[11px] md:tracking-wider block md:text-[18px]'>
+                or use this -
+              </p>
+              <div>
+                <strong>
+                  <span className='underline p-2 hover:bg-slate-200 rounded transition-all duration-500'>
+                    <a
+                      className='underline cursor-pointer'
+                      href='mailto:decawas@gmail.com'
+                      aria-label='daniel cawas gmail'
+                    >
                       decawas@gmail.com
-                    </span>
-                  </strong>
-                </div>
+                    </a>
+                  </span>
+                </strong>
               </div>
-            </a>
+            </div>
           </form>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import ReactConfetti from 'react-confetti'
 
-const Confetti = ({ openConfettee }) => {
+const Confetti = () => {
   const [windowDimension, setDimension] = useState({
     width: window.innerWidth,
     height: window.innerHeight,

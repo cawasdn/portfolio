@@ -63,7 +63,14 @@ const Hero = () => {
                   Look at my work &#8595;
                 </button>
               </Link>
-              <button className='hover:bg-slate-200'>View Resume</button>
+              <button className='hover:bg-slate-200'>
+                <a
+                  href='https://firebasestorage.googleapis.com/v0/b/fir-9-2d5f7.appspot.com/o/Resum%C3%A9.pdf?alt=media&token=a4b8eb00-bd64-416a-8897-bd959c7a8574'
+                  target='_blank'
+                >
+                  View Resume
+                </a>
+              </button>
             </div>
           </div>
         </div>
