@@ -25,13 +25,13 @@ const Projects = () => {
         <div className=''>
           <div className='flex flex-col gap-8 md:flex md:flex-col md:gap-8 my-8 mb-0'>
             {/* item 2  */}
-            <div
+            {/* <div
               className='flex flex-col space-y-4 md:flex-row'
               data-aos='fade-up'
               data-aos-delay='200'
               data-aos-duration='500'
-            >
-              <div className='grid gap-8 justify-center md:grid md:grid-cols-1 md:mb-10 xl:grid-cols-2'>
+            > */}
+            {/* <div className='grid gap-8 justify-center md:grid md:grid-cols-1 md:mb-10 xl:grid-cols-2'>
                 <div className='space-y-5'>
                   <div className='Portfolio text-2xl font-bold'>Audiio.com</div>
                   <div className='md:text-xl'>
@@ -55,16 +55,16 @@ const Projects = () => {
                       </Link>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
-                <Slider2 />
-                {/* <img
+            {/* <Slider2 /> */}
+            {/* <img
                   src='images/portfolio-1.jpg'
                   alt=''
                   className=' w-[500px]  border-2'
                 /> */}
-              </div>
-            </div>
+            {/* </div>
+            </div> */}
 
             {/* item 1 */}
             <div
