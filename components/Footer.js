@@ -14,7 +14,10 @@ const Footer = () => {
               </a>
             </Tippy>
             <Tippy content='Linkedin Profile'>
-              <a href=''>
+              <a
+                href='https://www.linkedin.com/in/daniel-cawas-20034a2a9/'
+                target='_blank'
+              >
                 <AiFillLinkedin size={32} />
               </a>
             </Tippy>

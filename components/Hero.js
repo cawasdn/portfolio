@@ -44,7 +44,10 @@ const Hero = () => {
                 </a>
               </Tippy>
               <Tippy content='Linkedin Profile'>
-                <a href='' target='_blank'>
+                <a
+                  href='https://www.linkedin.com/in/daniel-cawas-20034a2a9/'
+                  target='_blank'
+                >
                   <AiFillLinkedin
                     size={40}
                     className='hover:bg-slate-200 rounded'
