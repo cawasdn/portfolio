@@ -1,6 +1,7 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -9,17 +10,17 @@ const Footer = () => {
         <div className='flex flex-col items-center  h-full justify-end '>
           <div className='flex mb-3 space-x-5 '>
             <Tippy content='Github Profile'>
-              <a href='https://github.com/cawasdn' target='_blank'>
+              <Link href='https://github.com/cawasdn' target='_blank'>
                 <AiFillGithub size={32} />
-              </a>
+              </Link>
             </Tippy>
             <Tippy content='Linkedin Profile'>
-              <a
+              <Link
                 href='https://www.linkedin.com/in/daniel-cawas-20034a2a9/'
                 target='_blank'
               >
                 <AiFillLinkedin size={32} />
-              </a>
+              </Link>
             </Tippy>
           </div>
           <div className='mb-3'>Built and Designed by Daniel</div>

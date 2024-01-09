@@ -68,17 +68,26 @@ const NavMobile = () => {
               </div>
               <div className='flex items-center space-x-1' onClick={handleNav}>
                 <li>
-                  <a
+                  <Link
                     href='https://firebasestorage.googleapis.com/v0/b/fir-9-2d5f7.appspot.com/o/Daniel%20Cawas%20CV.pdf?alt=media&token=813cb35b-5428-4817-bec1-95c46bcdb0bd'
                     target='_blank'
                   >
                     Resume
-                  </a>
+                  </Link>
                 </li>
                 <TbExternalLink />
               </div>
               <div className='flex space-x-5'>
-                <AiFillGithub size={32} /> <AiFillLinkedin size={32} />
+                <Link href='https://github.com/cawasdn' target='_blank'>
+                  <AiFillGithub size={32} />
+                </Link>
+
+                <Link
+                  href='https://www.linkedin.com/in/daniel-cawas-20034a2a9/'
+                  target='_blank'
+                >
+                  <AiFillLinkedin size={32} />
+                </Link>
               </div>
             </div>
           </ul>

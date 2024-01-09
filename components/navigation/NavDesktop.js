@@ -66,12 +66,12 @@ const NavDesktop = () => {
             </div>
             <div className='flex items-center space-x-1 hover:bg-slate-200 px-2 py-1 rounded cursor-pointer'>
               <li>
-                <a
+                <Link
                   href='https://firebasestorage.googleapis.com/v0/b/fir-9-2d5f7.appspot.com/o/Daniel%20Cawas%20CV.pdf?alt=media&token=813cb35b-5428-4817-bec1-95c46bcdb0bd'
                   target='_blank'
                 >
                   Resume
-                </a>
+                </Link>
               </li>
               <TbExternalLink />
             </div>
