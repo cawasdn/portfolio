@@ -90,10 +90,13 @@ const Projects = () => {
                   </div>
                   <div className='space-x-4'>
                     <div className='space-x-6 [&>*]:p-2 [&>*]:bg-slate-700 [&>*]:rounded text-white'>
-                      <Link href='https://audiio.com' target='_blank'>
+                      <Link href='https://decawas.vercel.app/' target='_blank'>
                         <button>Live Demo</button>
                       </Link>
-                      <Link href='https://audiio.com' target='_blank'>
+                      <Link
+                        href='https://github.com/cawasdn/portfolio'
+                        target='_blank'
+                      >
                         <button>Code Repo</button>
                       </Link>
                     </div>
