@@ -67,7 +67,7 @@ const NavDesktop = () => {
             <div className="flex items-center space-x-1 hover:bg-slate-200 px-2 py-1 rounded cursor-pointer">
               <li>
                 <Link
-                  href="https://firebasestorage.googleapis.com/v0/b/fir-9-2d5f7.appspot.com/o/DanielCawasCV--.pdf?alt=media&token=2c711ffe-4cc5-4dd2-b296-3087d69d91e4"
+                  href="https://firebasestorage.googleapis.com/v0/b/fir-9-2d5f7.appspot.com/o/DanielCawasCV---.pdf?alt=media&token=f3d60860-0712-4270-8e75-277291f308b8"
                   target="_blank"
                 >
                   Resume
