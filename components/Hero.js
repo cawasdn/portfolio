@@ -25,7 +25,9 @@ const Hero = () => {
             data-aos-delay="300"
             data-aos-duration="500"
           >
-            I am a frontend Developer&#8218; currently focused on building
+            {/* I am a frontend Developer&#8218; currently focused on building
+            beautiful web interfaces and web applications. */}
+            I am a Software Engineer&#8218; currently focused on building
             beautiful web interfaces and web applications.
           </p>
           <div
